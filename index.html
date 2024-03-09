@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces a hojas de estilo y fuentes -->
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <title>Encriptador</title>
+    <link rel="icon" href="img/icon/icono.png">
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div class="logo-container">
+             <img src="img/alura-logo.png" alt="Logo Alura LATAM">
+        </div>
+        <div class="titulo-container">
+            <h2 class="titulo-principal">Encriptador de texto.</h2>
+            <h4 class="subtitulo">Codifica un mensaje de forma segura...</h4>
+        </div>
+    </header>
+
+    <!-- Sección de texto -->
+    <section class="pedir-texto">
+        <textarea id="caja-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <section class="btn-acciones">
+            <div id="alerta">
+                <img src="img/icon/alert-icon.png" alt="Icono de advertencia para condiciones de entrada">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button onclick="encriptarTexto()" class="Encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="Desencriptar">Desencriptar</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Sección de resultado -->
+    <section class="mostrar-resultado">
+        <div class="img-muneco">
+            <img src="img/search.svg" alt="Avatar con una lupa en la mano">
+            <p class="uno">Ningún mensaje fue encontrado</p>
+            <p class="dos">Ingrese el texto que desee encriptar o desencriptar.</p>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="social-links">        
+            <ul>
+                <li><a target="_blank" href="https://www.linkedin.com/in/deison-barreto-montes/"><i class="fi fi-brands-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://github.com/DeisonBM"><i class="fi fi-brands-github"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@systemsbm5916/featured"><i class="fi fi-brands-youtube"></i></a></li>
+                <li><a target="_blank" href=""><i class="fi fi-brands-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 BartoBM & <a target="_blank" href="https://www.aluracursos.com/">Alura</a> Todos los derechos reservados.</p>
+            <p>Desarrollado por Deison Barreto M</p>
+        </div>
+    </footer>
+    
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

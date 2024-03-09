@@ -1,0 +1,376 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos generales del body */
+body {
+    background-color: #f3f5fc;
+}
+
+/* Estilos del header */
+header {
+    width: 90%;
+    height: 70px;
+    display:inline-block;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+/* Estilos del logo */
+.logo-container {
+    width: 15%;
+}
+
+/* Estilos del título principal */
+.titulo-principal {
+    position: relative;
+    text-align: center;
+    margin-top: -56px;
+    font-size: 20px;
+}
+
+/* Estilos del subtitulo */
+.subtitulo {
+    color: #0a6dc2;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: escribir 4s steps(32, end) forwards, parpadeo 1s infinite step-end;
+    font-size: 15px;
+}
+
+/* Estilos del texto */
+.pedir-texto {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* Estilos del caja de texto */
+#caja-texto {
+    margin-top: 40px;
+    margin-left: 195px;
+    padding: 10px;
+    width: 35%;
+    height: 270px;
+    border: none;
+    resize: none;
+    background-color: #f4f4fc;
+    font-size: 20px;
+    color: #0a3871;
+    outline: none;
+}
+
+/* Estilos del placeholder de la caja de texto */
+#caja-texto::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a3871;
+}
+
+/* Estilos de alerta */
+#alerta {
+    display: flex;
+    align-items: center;
+    margin-left: 195px;
+}
+
+#alerta img {
+    margin-right: 5px;
+    width: 12px;
+}
+
+#alerta p {
+    font-size: 12px;
+    color: #6b7178;
+}
+
+/* Estilos de los botones */
+.btn-acciones button {
+    border-radius: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.Encriptar {
+    background-color: #0a3871;
+    color: #ffffff;
+    width: 246.5px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 195px;
+}
+
+.Desencriptar {
+    background-color: #d8dfe8;
+    color: #0a3871;
+    width: 246.5px;
+    height: 50px;
+    border: #0a3871 solid 1px;
+    border-radius: 10px;
+}
+
+/* Estilos de la sección de resultado */
+.mostrar-resultado {
+    background-color: #ffffff;
+    width: 300px;
+    height: 420px;
+    position: absolute;
+    right: 220px;
+    top: 85px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
+.img-muneco img {
+    padding: 20px;
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.uno {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.dos {
+    text-align: center;
+    font-size: 13px;
+    color: #495057;
+}
+
+/* Estilos del footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #495057;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos de los enlaces sociales */
+.social-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;    
+}
+
+a {
+    text-decoration: none;
+    color: #495057;
+}
+
+.social-links ul li {
+    margin-right: 10px;
+}
+
+/* Estilos de la sección de derechos de autor */
+.copyright {
+    font-size: 14px;
+}
+
+button.copiar{
+    background-color: #d8dfe8;
+    color: #0a3871;
+    width: 80%;
+    height: 50px;
+    border: #0a3871 solid 1px;
+    border-radius: 10px;
+    margin: 0 30px;
+    margin-top: 245px;
+    cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes escribir {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30.3%;
+    }
+}
+
+@keyframes parpadeo {
+    0%, 100% {
+        border-color: orange;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    header {
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    
+    #caja-texto {
+        margin-top: 1px;
+        margin-left: 20px;
+        margin-right: 0px;
+        padding: 15px;
+        width: 90.5%;
+        outline: none;
+    }
+
+    #alerta {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+   
+    .Encriptar {
+        width: 45.6%;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .Desencriptar {
+       width: 45.6%;
+       margin-left: 20px;
+       height: 50px;
+    }
+
+    .pedir-texto {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .img-muneco img {
+        display: none;
+    }
+
+    .mostrar-resultado {     
+        position: absolute;        
+        margin-top: 433px;              
+        height: 190px;    
+        width: 86vw;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 15px;
+        padding: 30px;
+        font-size: 30px;
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    }   
+
+    button.copiar{
+        background-color: #d8dfe8;
+        color: #0a3871;
+        width: 60%;
+        height: 50px;
+        border: #0a3871 solid 1px;
+        border-radius: 10px;
+        margin: 0 30px;
+        margin-top: 10%;
+        margin-left: 20%;
+        cursor: pointer;
+    }
+    
+    .mostrar-resultado br {
+        display: none;
+    }
+             
+    footer {         
+        position: relative;       
+        margin-bottom: 0;         
+        width: 100%;         
+        margin-top: 40%;         
+    }
+
+    @keyframes escribir {
+        from {
+            width: 0;
+        }
+        to {
+            width: 66.8%;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) and (max-width: 320px) {
+    .titulo-container, .subtitulo {
+        display: none;
+    }
+
+    #caja-texto {
+        margin-top: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 9px;
+        width: 82%;
+        height: 200px;
+        outline: none;
+    }
+
+    #alerta p {
+        font-size: 9px;
+    }
+
+    #alerta img {
+        width: 10px;
+    }
+
+    .Encriptar {
+        width: 88%;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .Desencriptar {
+       width: 88%;
+       margin-left: 20px;
+       height: 50px;
+    }
+
+    .uno {
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+    }
+    
+    .dos {
+        text-align: center;
+        font-size: 11px;
+        color: #495057;
+    }
+
+    .mostrar-resultado {
+        position: absolute;        
+        margin-top: 395px;              
+        height: 100px;    
+        width: 68%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 15px;
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    }
+
+    footer {         
+        position: relative;       
+        margin-bottom: 0;         
+        width: 100%;         
+        margin-top: 65%;
+        justify-content: center;      
+    }
+}
